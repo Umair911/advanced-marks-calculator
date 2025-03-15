@@ -8,24 +8,37 @@
     <meta property="og:title" content="Advanced Marks Calculator">
     <meta property="og:description" content="Smart marks distribution calculator for exams">
     <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" href="./icon-192.png">
-    <link rel="apple-touch-icon" href="./icon-192.png">
-    <link rel="manifest" href="./manifest.json">
+    <meta property="og:url" content="https://umair911.github.io/advanced-marks-calculator/">
+    <link rel="canonical" href="https://umair911.github.io/advanced-marks-calculator/">
+    <link rel="icon" type="image/png" href="https://umair911.github.io/advanced-marks-calculator/icon-192.png">
+    <link rel="apple-touch-icon" href="https://umair911.github.io/advanced-marks-calculator/icon-192.png">
+    <link rel="manifest" href="https://umair911.github.io/advanced-marks-calculator/manifest.json">
     <meta name="theme-color" content="#0f172a">
     <title>Advanced Marks Calculator</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <base href="/advanced-marks-calculator/">
     <style>
         /* Your existing CSS styles here */
     </style>
 </head>
 <body>
-    <!-- Your existing HTML content here -->
+    <div id="installPrompt">
+        <span>Install Advanced Marks Calculator</span>
+        <button id="installButton">Install Now</button>
+        <button class="close" onclick="closeInstallPrompt()">✕</button>
+    </div>
+    <div id="offlineIndicator">
+        <span>You're offline</span>
+    </div>
+    
+    <div class="container">
+        <!-- Your existing HTML content here -->
+    </div>
+
     <script>
-        // Register Service Worker with the correct scope for GitHub Pages
+        // Register Service Worker with absolute path
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js', {
+                navigator.serviceWorker.register('https://umair911.github.io/advanced-marks-calculator/sw.js', {
                     scope: '/advanced-marks-calculator/'
                 })
                 .then(registration => {
@@ -36,6 +49,8 @@
                 });
             });
         }
+
+        // Your existing JavaScript code here
     </script>
 </body>
 </html>
