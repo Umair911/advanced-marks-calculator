@@ -1,10 +1,11 @@
 const CACHE_NAME = 'marks-calculator-v1';
+const BASE_PATH = '/advanced-marks-calculator';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/manifest.json'
+  `${BASE_PATH}/`,
+  `${BASE_PATH}/index.html`,
+  `${BASE_PATH}/icon-192.png`,
+  `${BASE_PATH}/icon-512.png`,
+  `${BASE_PATH}/manifest.json`
 ];
 
 // Install Service Worker
@@ -34,6 +35,12 @@ self.addEventListener('activate', (event) => {
 
 // Fetch Event Strategy
 self.addEventListener('fetch', (event) => {
+  // Add base path to request if needed
+  const url = new URL(event.request.url);
+  if (!url.pathname.startsWith(BASE_PATH)) {
+    url.pathname = BASE_PATH + url.pathname;
+  }
+
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
