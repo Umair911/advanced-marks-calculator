@@ -2,8 +2,6 @@
 
 A professional web application for smart distribution of exam marks with MCQs, Short Questions, and Long Questions.
 
-![Advanced Marks Calculator](screenshots/preview.png)
-
 ## Features
 
 - 🎯 Smart marks distribution for exams
@@ -16,96 +14,87 @@ A professional web application for smart distribution of exam marks with MCQs, S
 - 📈 Distribution statistics
 - 🎭 Dark mode interface
 
-## Live Demo
+## Quick Start
 
-Visit the live application: [Advanced Marks Calculator](https://umair911.github.io/advanced-marks-calculator)
+1. Visit the calculator: [Advanced Marks Calculator](https://umair911.github.io/advanced-marks-calculator/)
+2. Enter your total marks (20-50)
+3. Adjust MCQ and Short Question counts
+4. Get instant calculations and visualizations
 
-## Technologies Used
+## Usage Guide
 
-- HTML5
-- CSS3 (Modern features & animations)
-- JavaScript (ES6+)
-- PWA (Progressive Web App)
-- Service Workers
-- Local Storage
-- CSS Grid & Flexbox
-- CSS Custom Properties
-- Modern Web APIs
+### Basic Usage
 
-## Features in Detail
+1. **Total Marks**: Enter marks between 20-50 (in steps of 5)
+2. **MCQs**: Choose between 5-8 questions (1 mark each)
+3. **Short Questions**: Add required number (2 marks each)
+4. **Long Question**: Fixed at 8 marks (divided into parts A & B)
 
-### 1. Smart Distribution
-- Automatically calculates optimal distribution of marks
-- Supports MCQs, Short Questions, and Long Questions
-- Validates total marks against standard values
+### Features
 
-### 2. Interactive UI
-- Real-time updates
-- Smooth animations
-- Responsive design
+#### Smart Distribution
+- Automatic calculation of optimal distribution
+- Real-time validation of total marks
+- Intelligent suggestions based on total marks
+
+#### Visual Feedback
+- Dynamic pie chart showing distribution
+- Progress bars for each question type
+- Real-time statistics updates
+
+#### Mobile Support
+- Fully responsive design
 - Touch-friendly interface
+- Install as PWA for offline use
 
-### 3. Visualization
-- Dynamic pie chart
-- Progress bars
-- Statistics cards
-- Distribution preview
+## Development
 
-### 4. PWA Features
-- Offline support
-- Install prompt
-- App-like experience
-- Fast loading
+### Prerequisites
+- Modern web browser
+- Basic understanding of HTML/CSS/JavaScript
 
-## Installation
-
+### Local Development
 1. Clone the repository:
 ```bash
 git clone https://github.com/Umair911/advanced-marks-calculator.git
 ```
 
-2. Navigate to the project directory:
+2. Navigate to project directory:
 ```bash
 cd advanced-marks-calculator
 ```
 
 3. Open `index.html` in your browser or use a local server:
 ```bash
+# Using Python
 python -m http.server 8000
-# or
+
+# Using PHP
 php -S localhost:8000
 ```
 
-## Usage
-
-1. Enter total marks (20-50)
-2. Adjust MCQ count (5-8)
-3. Set Short Questions count
-4. View suggested distributions
-5. Get instant calculations and visualizations
-
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+### Ways to Contribute
+- Report bugs
+- Suggest new features
+- Improve documentation
+- Submit pull requests
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
+## Support
 
-- **Umair** - [GitHub Profile](https://github.com/Umair911)
+For support:
+1. Open an issue in this repository
+2. Contact the maintainer through GitHub
 
 ## Acknowledgments
 
 - Modern UI/UX principles
 - Educational assessment best practices
 - PWA implementation guidelines
-
-## Support
-
-For support, email umair@example.com or open an issue in the repository.
